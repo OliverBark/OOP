@@ -17,5 +17,19 @@ public class Main {
         System.out.println(loft);
         System.out.println(kælder);
         System.out.println(Diner);
+
+
+        Dice firstDice = new Dice();
+
+        firstDice.roll();
+
+        System.out.println("\nDice roll: "+ firstDice.getFaceValue());
+
+        Person p1 = new Person("\nJohn", 34);
+        Person p2 = new Person("Jesper", 42);
+        System.out.println(p1);
+        System.out.println(p2);
+        System.out.println(p1 + " har haft fødselsdag, så nu er han " + p1.hasBirthday());
+        System.out.println(p2 + " har haft fødselsdag, så nu er han " + p2.hasBirthday());
     }
 }
