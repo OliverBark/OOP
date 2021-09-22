@@ -19,7 +19,7 @@ public class Main {
         System.out.println(Diner);
 
 
-        Dice firstDice = new Dice();
+        Die firstDice = new Die();
 
         firstDice.roll();
 
