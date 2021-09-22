@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Random;
 
-public class Dice {
+public class Die {
     private int faceValue;
 
     public int getFaceValue() {
