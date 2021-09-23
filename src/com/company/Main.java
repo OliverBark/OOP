@@ -1,12 +1,14 @@
 package com.company;
 
+import static com.company.Lamp.getcountLamp;
+
 public class Main {
 
     public static void main(String[] args) {
         Lamp skrivebord = new Lamp("Desk lamp ", false);
         Lamp loft = new Lamp("Ceiling lamp ", true);
         Lamp kaelder = new Lamp("Basement lamp ", false);
-        Lamp Diner = new Lamp("Diner lamp "); //overloading.
+        Lamp Diner = new Lamp("Diner lamp ");
 
         skrivebord.flipSwitch();
         loft.flipSwitch();
@@ -17,6 +19,8 @@ public class Main {
         System.out.println(loft);
         System.out.println(kaelder);
         System.out.println(Diner);
+
+        System.out.println(getcountLamp());
 
 
         Die firstDice = new Die();

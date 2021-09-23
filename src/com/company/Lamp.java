@@ -4,16 +4,18 @@ public class Lamp {
     private boolean onOff;
     private String lampName;
     private String status;
-
+    public static int countLamp;
 
     public Lamp(String lampName, boolean onOff){
         this.lampName = lampName;
         this.onOff = onOff;
+        countLamp++;
     }
 
     public Lamp(String lampName){
         this.lampName = lampName;
         onOff = false;
+        countLamp++;
     }
 
     public boolean flipSwitch(){
@@ -28,6 +30,10 @@ public class Lamp {
             status = "Light is off";
         }
         return  lampName + " the " + status;
+    }
+
+    public static int getcountLamp(){
+        return countLamp;
     }
 
 }
